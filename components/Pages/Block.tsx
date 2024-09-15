@@ -41,8 +41,8 @@ export const Block = props => {
             <f-csb style={{ width: "100%", padding: "5px 0", direction: "rtl" }}>
                 <img
                     src={props.state.cart.includes(props.book.title) ?
-                        "https://cdn.turing.team/research/36/shopping-bag.png" :
-                        "https://cdn.turing.team/research/36/shopping-bag%20%283%29.png"}
+                        "https://ituring.ir/research/36/shopping-bag.png" :
+                        "https://ituring.ir/research/36/shopping-bag%20%283%29.png"}
                     style={{ height: 30, width: 30, objectFit: "contain", direction: "rtl" }}
                     onClick={() => {
                         const cart = [...props.state.cart];

@@ -67,7 +67,7 @@ const Page: PageEl = (props, state:{
       
         {/* <pre>{JSON.stringify(state.book,null,2)}</pre> */}
         <f-c>
-        <img src="https://cdn.turing.team/research/36/open-book.png" style={{width:20,height:20}}/>
+        <img src="https://ituring.ir/research/36/open-book.png" style={{width:20,height:20}}/>
         <sp-3/>
           <f-15>Title :</f-15>
           <sp-2/>
@@ -75,7 +75,7 @@ const Page: PageEl = (props, state:{
 
         </f-c>
         <f-c>
-        <img src="https://cdn.turing.team/research/36/writing%20%281%29.png" style={{width:20,height:20}}/>
+        <img src="https://ituring.ir/research/36/writing%20%281%29.png" style={{width:20,height:20}}/>
         <sp-3/>
           <f-15><b>Author :</b></f-15>
           <sp-2/>
@@ -83,7 +83,7 @@ const Page: PageEl = (props, state:{
 
         </f-c>
         <f-c>
-        <img src="https://cdn.turing.team/research/36/country.png" style={{width:20,height:20}}/>
+        <img src="https://ituring.ir/research/36/country.png" style={{width:20,height:20}}/>
         <sp-3/>
           <f-15>Country :</f-15>
           <sp-2/>
@@ -92,7 +92,7 @@ const Page: PageEl = (props, state:{
 
         </f-c>
         <f-c>
-        <img src="https://cdn.turing.team/research/36/language.png" style={{width:20,height:20}}/>
+        <img src="https://ituring.ir/research/36/language.png" style={{width:20,height:20}}/>
         <sp-3/>
           <f-15>Language :</f-15>
           <sp-2/>
@@ -100,7 +100,7 @@ const Page: PageEl = (props, state:{
 
         </f-c>
         <f-c>
-        <img src="https://cdn.turing.team/research/36/paper.png" style={{width:20,height:20}}/>
+        <img src="https://ituring.ir/research/36/paper.png" style={{width:20,height:20}}/>
         <sp-3/>
           <f-15>Pages :</f-15>
           <sp-2/>
@@ -123,16 +123,16 @@ const Page: PageEl = (props, state:{
           }
         }}>
           {state.cart.includes(state.book.title)?<f-13>Remove from cart</f-13>:<f-13>Add to cart</f-13>}
-        {/* <img src = "https://cdn.turing.team/research/36/love.png" style={{height:30, width:20, objectFit:"contain"}}/> */}
+        {/* <img src = "https://ituring.ir/research/36/love.png" style={{height:30, width:20, objectFit:"contain"}}/> */}
 
         </g-b>
       </WindowFloat>:null}
       <Window title="Shopping cart" style={{width:"calc(100%-20px)",margin : 10}}>
         <f-cse style={{width:"100%", height:60}}>
-          <f-c><img src="https://cdn.turing.team/research/36/tag.png"  style={{width:25,height:25}}/>
+          <f-c><img src="https://ituring.ir/research/36/tag.png"  style={{width:25,height:25}}/>
           <f-14>Total Price : {total_price}</f-14>
           </f-c>
-          <f-c><img src="https://cdn.turing.team/research/36/stack-of-books.png"  style={{width:25,height:25}}/>
+          <f-c><img src="https://ituring.ir/research/36/stack-of-books.png"  style={{width:25,height:25}}/>
           <f-14>Number of books :{state.cart.length} </f-14>
           </f-c>
         </f-cse>
@@ -168,7 +168,7 @@ export async function getServerSideProps(context) {
 
     let books= await global.db.collection("books").find({}).toArray()
     for(let book of books){
-      book.imageLink="https://cdn.turing.team/research/ex/books/"+book.imageLink
+      book.imageLink="https://ituring.ir/research/ex/books/"+book.imageLink
     }
     
     console.log(books)
